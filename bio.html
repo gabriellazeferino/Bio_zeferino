@@ -1,0 +1,279 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriella | Site Pessoal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* MENU */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:#8a2be2;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:70px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-top:10px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 35px;
+    background:#8a2be2;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+/* SEÇÕES */
+
+section{
+    padding:100px 10%;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.titulo h2{
+    font-size:40px;
+    color:#8a2be2;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#8a2be2;
+    margin-bottom:15px;
+}
+
+/* SONHOS */
+
+.sonhos{
+    background:#8a2be2;
+    color:white;
+    text-align:center;
+}
+
+.sonhos ul{
+    list-style:none;
+    font-size:20px;
+}
+
+.sonhos li{
+    margin:15px 0;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">Gabriella</div>
+
+<ul>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#gostos">Gostos</a></li>
+<li><a href="#estudos">Estudos</a></li>
+<li><a href="#sonhos">Sonhos</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+<h1>Gabriella</h1>
+<p>14 anos • Estudante de ADS • Leitora • Escritora</p>
+
+<a href="#sobre" class="btn">Conheça Mais</a>
+
+</div>
+
+</section>
+
+<section id="sobre">
+
+<div class="titulo">
+<h2>Sobre Mim</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>👤 Nome</h3>
+<p>Gabriella</p>
+</div>
+
+<div class="card">
+<h3>🎂 Idade</h3>
+<p>14 anos</p>
+</div>
+
+<div class="card">
+<h3>💻 Formação</h3>
+<p>Cursando Análise e Desenvolvimento de Sistemas.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gostos">
+
+<div class="titulo">
+<h2>O Que Eu Gosto</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>📚 Leitura</h3>
+<p>Adoro ler e conhecer novas histórias.</p>
+</div>
+
+<div class="card">
+<h3>✍️ Escrita</h3>
+<p>Gosto de escrever e expressar minhas ideias.</p>
+</div>
+
+<div class="card">
+<h3>🎵 Música</h3>
+<p>Escutar música faz parte do meu dia a dia.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="estudos">
+
+<div class="titulo">
+<h2>Meus Estudos</h2>
+</div>
+
+<div class="card">
+<h3>🚀 Tecnologia</h3>
+<p>
+Estou cursando Análise e Desenvolvimento de Sistemas e aprendendo
+sobre programação, desenvolvimento web e tecnologia.
+</p>
+</div>
+
+</section>
+
+<section id="sonhos" class="sonhos">
+
+<h2>✨ Meus Sonhos</h2>
+
+<br>
+
+<ul>
+<li>🌍 Viajar por toda a Europa</li>
+<li>🐕 Ter um Golden Retriever</li>
+<li>💍 Me casar com meu vizinho</li>
+<li>🎓 Construir uma carreira na área da saúde</li>
+</ul>
+
+</section>
+
+<footer>
+<p>Site pessoal de Gabriella © 2026</p>
+</footer>
+
+</body>
+</html>
+```
